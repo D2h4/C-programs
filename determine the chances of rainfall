@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{  int t,a,h;
+   printf("enter the value of t,a,h");
+   scanf("%d%d%d",&t,&a,&h);
+   if(t>40 && a<10 && h==5)
+   {
+     printf(" 70per Chances of rainfall");
+   } 
+   else if(t<37 && a>10 && h==10)
+   {
+    printf("90per chances of rainfall");
+   }
+   else if(t<23 && a<2 && h==4)
+   {
+    printf("95per chances of rainfall");
+   }
+   else
+   {
+     printf("no rainfall");
+   }
+    return 0;
+}
