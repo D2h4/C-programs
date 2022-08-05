@@ -1,0 +1,105 @@
+//nested if-else..........
+#include<stdio.h>
+int main()
+{  char gender;
+   int age;
+   printf("enter the age: ");
+   scanf("%d",&age);
+   if(age>18)
+   {
+     printf("enter the gender: ");
+     scanf("%s", &gender);
+     if(gender=='m' || gender=='M')
+     {
+        printf("applied for driving license");
+     }
+     else if(gender=='f' || gender=='F')
+     {
+        printf("applied for cooking");
+     }
+     else{
+        printf("enter correct gender: ");
+     }
+   }
+   else{
+      printf("enter the gender\n");
+      scanf("%s", &gender);
+      if(gender=='m' || gender=='M' || gender=='f' || gender=='F')
+      {
+        printf("adults");
+      }
+      else{
+        printf("thank u");
+      }
+   }
+    return 0;
+}
+-----------------------------------------------------------------------
+//nested if-else..........
+#include<stdio.h>
+int main()
+{
+    int age,per;
+    char gen;
+    printf("enter the age: ");
+    scanf("%d",&age);
+    if(age>18)
+    {
+        printf("enter the per: ");
+        scanf("%d",&per);
+        if(per>=60)
+        {
+            printf("enter the gender: ");
+            scanf("%s",&gen);
+            if(gen=='m'|| gen=='M')
+            {
+                printf("applied for NCC C-certificate");
+            }
+            else if(gen=='f'|| gen=='F') 
+            {
+                printf("applied for scoutt certificate");
+            }
+            else
+            { printf("enter the correct gender: "); }
+        }
+        else
+        {
+             printf("enter the gender: ");
+            scanf("%s",&gen);
+            if(gen=='m'|| gen=='M')
+            {
+                printf("applied for NCC B-certificate");
+            }
+            else if(gen=='f'|| gen=='F') 
+            {
+                printf("applied for NSS");
+            }
+            else
+            { printf("enter the correct gender: "); }
+        }
+    }
+    else
+    {
+        printf("enter the per: ");
+        scanf("%d",&per);
+        if(per>=60)
+        {
+             printf("enter the gender: ");
+            scanf("%s",&gen);
+            if(gen=='m'|| gen=='M')
+            {
+                printf("applied for NCC B-certificate");
+            }
+            else if(gen=='f'|| gen=='F') 
+            {
+                printf("applied for NCC A-certificate");
+            }
+            else
+            { printf("enter the correct gender: "); }
+        }
+        else{
+            printf("sorry");
+        }
+    }
+    return 0;
+}
