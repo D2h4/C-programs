@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int main()
+{   int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    if(n%7==0)
+    {
+        printf("given number is divisible by 7");
+    }
+    else
+    {
+        printf("sorry for this error");
+    }
+   
+    return 0;
+} 
