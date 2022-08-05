@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int main()
+{  int temp;
+   printf("enter the temp");
+   scanf("%d",&temp);
+   if(temp<=60)
+   {
+     printf("u didn't have the fever");
+   }
+   else
+   {
+      printf("u have the fever");
+   }
+   
+    return 0;
+} 
