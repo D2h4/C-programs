@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter the value of n: ");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+        case 2:
+        case 11:
+        case 12:
+        printf("winter");
+        break;
+        case 3:
+         case 4:
+        case 5:
+        case 6:
+        printf("summer");
+        break;
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        printf("raining");
+        break;
+        default:
+        printf("sorry");
+        
+    }
+    return 0;
+}
