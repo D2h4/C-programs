@@ -1,0 +1,79 @@
+//pointer arithmetic
+#include<stdio.h>
+int main()
+{
+  int a=20;
+  int *p;
+  int *q;
+  p=&a;
+  q=p;
+  printf("%d\n",*p);
+  printf("%d",*q);
+  return 0;
+}
+-------------------------------------------------------------------------------
+
+//increment or decrement with the help of array
+#include<stdio.h>
+int main()
+{
+    int x[10],i,*p;
+    p=x;
+    printf("enter the elements in array: ");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    p=p+3;
+    printf("%d\n",*p);
+    p=p-2;
+    printf("%d",*p);
+    return 0;
+
+}
+------------------------------------------------------------------------------------------------------------------------
+
+//pointer arithmetic
+#include<stdio.h>
+int main()
+{  int age=22;
+   int *ptr=&age;
+    printf("%u\n",ptr);
+    ptr++;
+     printf("%u\n",ptr);
+    ptr--;
+       printf("%u\n",ptr);
+     return 0;
+}
+------------------------------------------------------------------------------------
+
+//pointer arithmetic
+#include<stdio.h>
+int main()
+{
+     char ch='*';
+     char * ptr=&ch;
+     printf("%u\n",ptr);
+    ptr++;
+     printf("%u\n",ptr);
+    ptr--;
+       printf("%u\n",ptr);
+     return 0;
+}
+-------------------------------------------------------------------------------------
+
+//subtract and comparsion of two pointers of same data type.
+#include<stdio.h>
+int main()
+{
+    int age=23;
+    int *ptr=&age;
+    int _age=34;
+    int  *_ptr=&_age;
+
+    printf("%u\n",ptr-_ptr);
+    ptr=&_age;
+    printf("%u",ptr==_ptr);
+    return 0;
+}
+
