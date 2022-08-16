@@ -1,0 +1,11 @@
+//multi-level or double pointer
+#include<stdio.h>
+int main()
+{
+    int **p,*q;
+    int x=32;
+    q=&x;
+    p=&q;
+    printf("%p\n%d\n%d",p,*q,**p);
+    return 0;
+}
