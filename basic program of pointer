@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int age=20;
+    int *ptr=&age;
+    int _age=*ptr;
+    //address
+    printf("%p\n",ptr);
+    printf("%p\n",&age);
+    printf("%p\n",&ptr);
+    //data
+     printf("%d\n",*ptr);
+    printf("%d\n",*(&age));
+    printf("%d",_age);
+    return 0;
+}
