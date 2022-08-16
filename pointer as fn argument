@@ -1,0 +1,15 @@
+//call by reference
+#include<stdio.h>
+void sqr(int *n);//fn prototyping
+
+int main()
+{ int n=4;
+  sqr(&n);//fn calling
+  printf("%d",n);
+   return 0;
+}
+void sqr(int *n)//fn defination
+{
+    *n=*n * *n;
+    printf("%d\n",*n);
+}
