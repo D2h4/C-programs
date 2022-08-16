@@ -8,8 +8,30 @@ int main()
   printf("%d",n);
    return 0;
 }
+//call by reference
 void sqr(int *n)//fn defination
 {
     *n=*n * *n;
     printf("%d\n",*n);
+}
+
+---------------------------------------------------------------------
+
+#include<stdio.h>
+void sum(int *x,int *y);//fn prototyping
+int main()
+{
+    int x,y;
+    printf("enter the value of x and y: ");
+    scanf("%d%d",&x,&y);
+    sum(&x,&y);//fn calling
+    printf("\n%d",x+y);
+    return 0;
+}
+//call by reference
+void sum(int *a,int *b)//fn defination
+{
+    int c;
+    c=*a + *b;
+    printf("%d",c);
 }
