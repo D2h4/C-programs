@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int a=10,b=5;
+    int *p;
+    p=&a;
+    printf("%d %p %d",a,p,*p);
+    *p=4;
+     printf("\n%d %p %d",a,p,*p);
+     p=&b;
+      printf("\n%d %p %d",b,p,*p);
+     return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+//void pointer
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    char ch='z';
+    void *p;
+    p=&a;
+    printf("%d\n",*(int *)p);//type casting from void to int
+    p=&ch;
+    printf("%c",*(char *)p);//type casting from void to char
+    return 0;
+}
