@@ -1,0 +1,18 @@
+//sum of two number by using function ( accept parameter,return value)
+#include<stdio.h>
+int sum(int a,int b);//function prototyping
+int main()
+{
+     int a,b;
+   printf("enter the value of a,b: ");
+   scanf("%d%d",&a,&b);
+
+    int n=sum(a,b);//function calling
+     printf("%d",n);
+    return 0;
+}
+//call by value
+int sum(int a,int b)//function defination
+{
+   return a+b;
+}
