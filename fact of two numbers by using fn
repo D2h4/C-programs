@@ -1,0 +1,18 @@
+//fact of two numbers by using function
+#include<stdio.h>
+int fact(int a,int b);//function prototyping
+int main()
+{
+    int a=3,b=6;
+    int n=fact(a,b);//function calling
+    printf("%d",n);
+    return 0;
+}
+//call by value
+int fact(int a,int b)//function defination
+{
+    int fact;
+    fact=a*b;
+    return fact;
+}
+
