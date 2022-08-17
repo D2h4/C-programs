@@ -1,0 +1,20 @@
+//avg of five numbers by using functions(not accept parameter, return value)
+#include<stdio.h>
+int avg();//fn prototyping
+int main()
+{
+   int n=avg();//fn calling
+   printf("%d",n);
+    return 0;
+}
+//call by value
+int avg()//fn defination
+{
+    int a,b,c,d,e;
+   printf("enter the five numbers: ");
+   scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+   return (a+b+c+d+e)/5;
+
+}
+
+
