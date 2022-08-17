@@ -1,0 +1,17 @@
+//square of a number by using function
+#include<stdio.h>
+int sqr(int a);//function prototyping
+int main()
+{
+    int a=3;
+    int n=sqr(a);//function calling
+    printf("%d",n);
+    return 0;
+}
+//call by value
+int sqr(int a)//function defination
+{
+    int n;
+    n=a*a;
+    return n;
+}
