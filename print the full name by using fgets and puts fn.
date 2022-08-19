@@ -1,0 +1,9 @@
+//print the full name by using fgets and puts fn.
+#include<stdio.h>
+int main()
+{
+    char str[100];
+    fgets(str,100,stdin);
+    puts(str);
+    return 0;
+}
