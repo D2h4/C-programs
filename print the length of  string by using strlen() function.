@@ -1,0 +1,11 @@
+//print the length of  string by using strlen() function.
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char name[]="Arpit Dhiman";
+  int length=strlen(name);
+  printf("%d",length);
+
+  return 0;
+}
