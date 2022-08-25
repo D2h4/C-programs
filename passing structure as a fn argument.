@@ -1,0 +1,21 @@
+//passing structure as a fn argument.
+#include<stdio.h>
+struct student{
+ int rollno;
+ float cgpa;
+ char name[100];
+
+};
+void printinfo(struct student s1)
+{
+    printf("student information: \n");
+    printf("%d\n",s1.rollno);
+    printf("%f\n",s1.cgpa);
+    printf("%s\n",s1.name);
+}
+int main()
+{
+    struct student s1={1334,7.6,"Aman"};
+    printinfo(s1);
+    return 0;
+}
