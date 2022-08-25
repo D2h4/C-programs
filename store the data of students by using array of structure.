@@ -1,0 +1,18 @@
+//store the data of students by using array of structure.
+#include<stdio.h>
+struct student{
+ int rollno;
+float cgpa;
+char name[];
+};
+int main()
+{
+    struct student ece[100];
+    ece[0].rollno=1234;
+    ece[0].cgpa=8.9;
+    strcpy(ece[0].name,"Aman");
+    printf("%d\n",ece[0].rollno);
+     printf("%f\n",ece[0].cgpa);
+      printf("%s\n",ece[0].name);
+      return 0;
+}
