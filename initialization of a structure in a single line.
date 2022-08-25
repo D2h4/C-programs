@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct student{
+  int rollno;
+  float cgpa;
+  char name[100];
+};
+int main()
+  {
+      struct student s1={1334,4.7,"vivek"};//initialization of a structure in a single line.
+      printf("%d\n",s1.rollno);
+       printf("%0.1f\n",s1.cgpa);
+        printf("%s\n",s1.name);
+        return 0;
+  }
