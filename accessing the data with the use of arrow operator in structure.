@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct student{
+ int rollno;
+ float cgpa;
+ char name[100];
+};
+int main()
+{
+    struct student s1={1235,7.8,"Akash"};
+    printf("%d\n",s1.rollno);
+    struct student *ptr=&s1;
+    printf("%d\n",(*ptr).rollno);
+     printf("%d\n",ptr->rollno);//accessing the data with the use of arrow operator in structure.
+    return 0;
+}
