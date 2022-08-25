@@ -1,0 +1,36 @@
+//write a program to store the data of 3 students by using structure.
+#include<stdio.h>
+#include<string.h>
+struct student{
+   int rollno;
+   float cgpa;
+   char name[100];
+
+};
+int main()
+{
+    struct student s1,s2,s3;
+    s1.rollno=123;
+    s1.cgpa=7.8;
+    strcpy(s1.name,"Aman");
+    printf("%d\n",s1.rollno);
+    printf("%f\n",s1.cgpa);
+    printf("%s\n",s1.name);
+    printf("\n");
+
+    s2.rollno=124;
+    s2.cgpa=8.7;
+    strcpy(s2.name,"vivek");
+    printf("%d\n",s2.rollno);
+    printf("%f\n",s2.cgpa);
+    printf("%s\n",s2.name);
+    printf("\n");
+
+    s3.rollno=125;
+    s3.cgpa=5.6;
+    strcpy(s3.name,"vijay");
+    printf("%d\n",s3.rollno);
+    printf("%f\n",s3.cgpa);
+    printf("%s",s3.name);
+     return 0;
+}
