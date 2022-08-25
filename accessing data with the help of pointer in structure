@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct student{
+  int rollno;
+  float cgpa;
+  char name[100];
+};
+int main()
+{
+    struct student s1={1445,7.8,"anubhav"};
+    printf("%d\n",s1.rollno);
+    struct student *ptr=&s1;
+    printf("%d\n",(*ptr).rollno);//accessing data with the help of pointer.
+    return 0;
+}
