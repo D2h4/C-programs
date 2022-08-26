@@ -1,0 +1,21 @@
+//use of typedef keyword in structure.
+#include<stdio.h>
+typedef struct student{
+ int rollno;
+ float cgpa;
+ char name[100];
+} stu;
+int main()
+{
+  /* stu s1;
+   s1.rollno=2333;
+   s1.cgpa=7.8;
+   strcpy(s1.name,"VIJAY");*/
+
+   stu s1={1223,9.8,"AMAN"};
+
+     printf("%d\n",s1.rollno);
+      printf("%f\n",s1.cgpa);
+       printf("%s\n",s1.name);
+       return 0;
+}
