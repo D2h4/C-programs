@@ -1,0 +1,21 @@
+/*you have to store the marks of 30 students in class.what will you use-
+1)array of 30 floats
+2)strcuture
+*/
+
+#include<stdio.h>
+int main()
+{
+    float marks[30];
+    printf("enter the marks of 30 students: ");
+    for(int i=0;i<30;i++)
+    {
+        scanf("%f\n",&marks[i]);
+    }
+
+    for(int i=0;i<30;i++)
+    {
+        printf("%f",marks[i]);
+    }
+    return 0;
+}
