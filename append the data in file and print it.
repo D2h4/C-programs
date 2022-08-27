@@ -1,0 +1,15 @@
+//append the data in file and print it.
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","a");
+
+    fprintf(fptr,"\n%c",'k');
+     fprintf(fptr,"%c",'i');
+      fprintf(fptr,"%c",'w');
+       fprintf(fptr,"%c",'i');
+
+        fclose(fptr);
+        return 0;
+}
