@@ -1,0 +1,20 @@
+//read and print the data of 5 integer of the file.
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","r");
+    int n;
+    fscanf(fptr,"%d",&n);
+    printf("integer is: %d\n",n);
+     fscanf(fptr,"%d",&n);
+    printf("integer is: %d\n",n);
+     fscanf(fptr,"%d",&n);
+    printf("integer is: %d\n",n);
+     fscanf(fptr,"%d",&n);
+    printf("integer is: %d\n",n);
+     fscanf(fptr,"%d",&n);
+    printf("integer is: %d\n",n);
+    fclose(fptr);
+    return 0;
+}
