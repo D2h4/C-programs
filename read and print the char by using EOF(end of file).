@@ -1,0 +1,17 @@
+//read and print the char by using EOF(end of file).
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","r");
+    char ch;
+    ch=fgetc(fptr);
+    while(ch!=EOF)
+    {
+        printf("%c\t",ch);
+        ch=fgetc(fptr);
+    }
+    printf("\n");
+    fclose(fptr);
+    return 0;
+}
