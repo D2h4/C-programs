@@ -1,0 +1,13 @@
+//read a char of file by using fgetc(fptr) function and print it.
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","r");
+    printf("%c\n",fgetc(fptr));
+     printf("%c\n",fgetc(fptr));
+      printf("%c\n",fgetc(fptr));
+       printf("%c\n",fgetc(fptr));
+        printf("%c\n",fgetc(fptr));
+    fclose("fptr");
+}
