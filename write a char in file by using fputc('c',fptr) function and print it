@@ -1,0 +1,15 @@
+//write a char in file by using fputc('c',fptr) function and print it
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","w");
+    fputc('A',fptr);
+     fputc('P',fptr);
+      fputc('P',fptr);
+       fputc('L',fptr);
+        fputc('E',fptr);
+        fclose(fptr);
+        return 0;
+
+}
