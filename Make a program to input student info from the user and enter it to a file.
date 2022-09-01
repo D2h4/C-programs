@@ -1,0 +1,21 @@
+//Make a program to input student info from the user and enter it to a file.
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","w");
+    int rollno;
+    float cgpa;
+    char name[100];
+    scanf("%d",&rollno);
+    scanf("%f",&cgpa);
+    scanf("%s",name);
+    fprintf(fptr,"%d\n",rollno);
+     fprintf(fptr,"%f\n",cgpa);
+      fprintf(fptr,"%s\n",name);
+
+
+    fclose(fptr);
+    return 0;
+
+}
