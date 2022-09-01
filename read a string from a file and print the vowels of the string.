@@ -1,0 +1,19 @@
+//write a program to read a string from a file and print the vowels of the string.
+#include<stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","r");
+    char ch;
+    ch=fgetc(fptr);
+    while(ch!=EOF)
+    {  if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+        {
+            printf("%c\t",ch);
+        }
+        ch=fgetc(fptr);
+    }
+    fclose(fptr);
+    return 0;
+}
+
