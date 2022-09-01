@@ -1,0 +1,70 @@
+//format the info of 5 students in a table like structure in a file.
+#include<stdio.h>
+typedef struct student{
+   char name[100];
+   int marks;
+   float cgpa;
+   char course[100];
+}stu;
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("text.txt","w");
+    stu s[5];
+   printf("enter the details of 1st student: ");
+    scanf("%s",s[0].name);
+     scanf("%d",&s[0].marks);
+      scanf("%f",&s[0].cgpa);
+      scanf("%s",s[0].course);
+
+   printf("enter the details of 2nd student: ");
+    scanf("%s",s[1].name);
+     scanf("%d",&s[1].marks);
+      scanf("%f",&s[1].cgpa);
+      scanf("%s",s[1].course);
+
+    printf("enter the details of 3rd student: ");
+    scanf("%s",s[2].name);
+     scanf("%d",&s[2].marks);
+      scanf("%f",&s[2].cgpa);
+      scanf("%s",s[2].course);
+
+    printf("enter the details of 4th student: ");
+    scanf("%s",s[3].name);
+     scanf("%d",&s[3].marks);
+      scanf("%f",&s[3].cgpa);
+      scanf("%s",s[3].course);
+
+    printf("enter the details of 5th student: ");
+    scanf("%s",s[4].name);
+     scanf("%d",&s[4].marks);
+      scanf("%f",&s[4].cgpa);
+      scanf("%s",s[4].course);
+
+      fprintf(fptr,"%s\t",s[0].name);
+       fprintf(fptr,"%d\t",s[0].marks);
+        fprintf(fptr,"%f\t",s[0].cgpa);
+         fprintf(fptr,"%s\n",s[0].course);
+
+         fprintf(fptr,"%s\t",s[1].name);
+       fprintf(fptr,"%d\t",s[1].marks);
+        fprintf(fptr,"%f\t",s[1].cgpa);
+         fprintf(fptr,"%s\n",s[1].course);
+
+         fprintf(fptr,"%s\t",s[2].name);
+       fprintf(fptr,"%d\t",s[2].marks);
+        fprintf(fptr,"%f\t",s[2].cgpa);
+         fprintf(fptr,"%s\n",s[2].course);
+
+         fprintf(fptr,"%s\t",s[3].name);
+       fprintf(fptr,"%d\t",s[3].marks);
+        fprintf(fptr,"%f\t",s[3].cgpa);
+         fprintf(fptr,"%s\n",s[3].course);
+
+         fprintf(fptr,"%s\t",s[4].name);
+       fprintf(fptr,"%d\t",s[4].marks);
+        fprintf(fptr,"%f\t",s[4].cgpa);
+         fprintf(fptr,"%s\n",s[4].course);
+       fclose(fptr);
+       return 0;
+}
