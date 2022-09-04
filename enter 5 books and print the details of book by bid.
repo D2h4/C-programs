@@ -1,0 +1,27 @@
+//WAP to enter 5 books and print the details of book by bid.
+#include<stdio.h>
+struct book{
+ int bid;
+ float price;
+ int pages;
+};
+int main()
+{
+    struct book b[5];
+    for(int i=0;i<5;i++)
+    {
+        scanf("%d%f%d",&b[i].bid,&b[i].price,&b[i].pages);
+    }
+    int n;
+    printf("enter the id which u want to search: ");
+    scanf("%d",&n);
+
+    for(int i=0;i<5;i++)
+    {
+        if(b[i].bid==n)
+        {
+            printf("%d\t%f\t%d",b[i].bid,b[i].price,b[i].pages);
+        }
+    }
+    return 0;
+}
