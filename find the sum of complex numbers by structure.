@@ -1,0 +1,23 @@
+//WAP to find the sum of complex numbers by structure.
+#include<stdio.h>
+typedef struct complex{
+ float real;
+ float img;
+}comp;
+int sum(comp a,comp b);
+int main()
+{  comp c1,c2;
+   printf("enter the value of c1: ");
+   scanf("%f%f",&c1.real,&c1.img);
+    printf("enter the value of c2: ");
+   scanf("%f%f",&c2.real,&c2.img);
+    sum(c1,c2);
+
+    return 0;
+}int sum(comp a,comp b)
+{
+    comp z;
+    z.real=a.real+b.real;
+    z.img=a.img+b.img;
+     printf("%f+i%f",z.real,z.img);
+}
