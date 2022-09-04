@@ -1,0 +1,21 @@
+//WAP to print the details of book by structure.(without pointer)
+#include<stdio.h>
+struct book{
+ int bid;
+ float price;
+ int pages;
+
+};
+int main()
+{
+    struct book b1,b2;
+    printf("enter the details of 1st book: ");
+    scanf("%d%f%d",&b1.bid,&b1.price,&b1.pages);
+    printf("enter the details of 2nd book: ");
+    scanf("%d%f%d",&b2.bid,&b2.price,&b2.pages);
+
+    printf("%d\t%f\t%d\n",b1.bid,b1.price,b1.pages);
+     printf("%d\t%f\t%d",b2.bid,b2.price,b2.pages);
+
+    return 0;
+}
