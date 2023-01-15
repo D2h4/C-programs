@@ -1,0 +1,37 @@
+//program to seperate out the odd and even numbers in a given array and placed them in separate arrays
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int x[10],even[10],odd[10],j=0,k=0;
+   printf("enter the array's element: ");
+   for(int i=0;i<10;i++)
+   {
+       scanf("%d",&x[i]);
+   }
+    for(int i=0;i<10;i++)
+    {
+        if(x[i]%2==0)
+        {
+            even[j]=x[i];
+            j=j+1;
+        }
+        else
+        {
+          odd[k]=x[i];
+          k=k+1;
+        }
+    }
+    printf("even array elements are: ");
+    for(int i=0;i<10;i++)
+    {
+        printf("%d\t",even[i]);
+    }
+   printf("\nodd array elements are: ");
+    for(int i=0;i<10;i++)
+    {
+        printf("%d\t",odd[i]);
+    }
+
+   getch();
+}
