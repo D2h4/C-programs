@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{ FILE *fp1,*fp2,*fp3;
+  int n,num;
+  printf("How many numbers u want to enter: ");
+  scanf("%d",&n);
+  fp1=fopen("data.txt","w");
+  for(int i=1;i<=n;i++)
+  {
+      scanf("%d",&num);
+      fprintf(fp1,"%d\t",num);
+  }
+  fclose(fp1);
+  fp1=fopen("data.txt","r");
+  fp2=fopen("odd.txt","w");
+  fp3=fopen("even.txt","w");
+
+  while((fscanf(fp1,"%d",&num))!=EOF)
+  {
+      if(num%2==0)
+      {
+          fprintf(fp3,"%d\t",num);
+      }
+      else{
+        fprintf(fp2,"%d\t",num);
+      }
+  }
+  fclose(fp1);
+  fclose(fp2);
+  fclose(fp3);
+   return 0;
+}
